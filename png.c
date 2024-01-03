@@ -3252,7 +3252,7 @@ png_ascii_from_fixed(png_const_structrp png_ptr, png_charp ascii,
       if (num <= 0x80000000) /* else overflowed */
       {
          unsigned int ndigits = 0, first = 16 /* flag value */;
-         char digits[10];
+         char digits[10] = {0};
 
          while (num)
          {
