@@ -1810,16 +1810,12 @@ test_one_file(const char *inname, const char *outname)
 }
 
 /* Input and output filenames */
-#ifndef PNG_TEST_DIR
-#define PNG_TEST_DIR "."
-#endif
-
 #ifdef RISCOS
-static const char *inname = PNG_TEST_DIR "/pngtest/png";
-static const char *outname = PNG_TEST_DIR "/pngout/png";
+static const char *inname = "pngtest/png";
+static const char *outname = "pngout/png";
 #else
-static const char *inname = PNG_TEST_DIR "/pngtest.png";
-static const char *outname = PNG_TEST_DIR "/pngout.png";
+static const char *inname = "pngtest.png";
+static const char *outname = "pngout.png";
 #endif
 
 int
